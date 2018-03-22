@@ -32,9 +32,10 @@
 				<div class="form-row">
 					<div class="form-column col-md-12">
 						<label for="pass">Contraseña:</label>
-						<input type="pasword" name="pass" class="form-control">
+						<input type="password" name="pass" class="form-control">
 					</div>
 				</div>
+	
 				<div class="form-row">
 					<div class="form-column col-md-12">
 						<input type="submit" name="btnIngresar" class="btn btn-primary" value="ingresar">

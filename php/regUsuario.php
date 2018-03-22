@@ -15,29 +15,38 @@
 	<script src="../js/menu.js"></script>
 </head>
 <body id="body">
-	<div class="cuadro" id="c-usuario">
+	<div class="cuadro" id="c-reg">
 		<div class="cuadro-ins bg-primary">
 			<p class="lead text-center">
 				Registrar Usuario
 			</p>
 		</div>
 		<div class="wrap">
-			<form action="php/ingresar.php" method="POST" >
+			<form action="registro.php" method="POST" >
 				<div class="form-row">
 					<div class="form-column col-md-12">
-						<label for="user">Usuario:</label>
-						<input type="text" name="user" class="form-control">
+						<label for="nomUser">Nombre usuario:</label>
+						<input type="text" name="nomUser" class="form-control">
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-column col-md-12">
-						<label for="pass">Contraseña:</label>
-						<input type="pasword" name="pass" class="form-control">
+						<label for="passUser">Contraseña:</label>
+						<input type="password" name="passUser" class="form-control">
+					</div>
+				</div>
+					<div class="form-row">
+					<div class="form-column col-md-12">
+						<label for="passUser">Rol del Usuario:</label>
+						<select name="rol" id="rol" class="form-control">
+							<option value="Administrador">Administrador</option>
+							<option value="Secretaria">Secretaria</option>
+						</select>
 					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-column col-md-12">
-						<input type="submit" name="btnIngresar" class="btn btn-primary" value="ingresar">
+						<input type="submit" name="btnRegistrar" class="btn btn-primary" value="registrar">
 					</div>
 				</div>
 			</form>
